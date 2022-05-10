@@ -1,0 +1,40 @@
+<section class="page-section portfolio" id="portfolio">
+  <div class="container">
+    <!-- Portfolio Section Heading-->
+    <h2 style="margin: 7px;"
+      class="page-section-heading text-center text-uppercase text-secondary mb-1"
+    >
+      DigmonApi
+    </h2>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <label for="inputPassword" class="col-sm-1 col-form-label">Nome: </label>
+        <div class="col-sm-8">
+            
+          <input type="text" class="form-control" id="inputPassword" placeholder="Digmon filtro por nome">
+        </div>
+      </div>
+    
+    <!-- Portfolio Grid Items-->
+    <div class="row justify-content-center">
+     
+      <div
+        class="card"
+        style="width: 18rem; margin: 10px"
+        *ngFor="
+          let d of digmons 
+        "
+      >
+        <img src="{{ d.img }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ d.name }}</h5>
+          <p  class="card-text">{{ d.level }}</p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 2-->
+    </div>
+   
+  </div>
+</section>
+
