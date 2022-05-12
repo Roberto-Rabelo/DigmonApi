@@ -13,7 +13,7 @@ export class DigmonDetalhesComponent implements OnInit {
 
   digmons : Digmon[] =[];
   pagina :number = 1;
-  filtro : any ={nome: '', level: ''};
+  filtro : any ={name: '', level:''};
 
   constructor(private digmonService: DigmonServices, private ngxService:NgxSpinnerService) { }
 

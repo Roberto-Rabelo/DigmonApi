@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppComponent } from './app.component';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DigmonDetalhesComponent } from './digmon-detalhes/digmon-detalhes.component';
 
 @NgModule({
@@ -15,7 +17,10 @@ import { DigmonDetalhesComponent } from './digmon-detalhes/digmon-detalhes.compo
     BrowserModule,
     HttpClientModule,
     NgxPaginationModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FilterPipeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
